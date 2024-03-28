@@ -1,0 +1,4 @@
+repository "FMPrepo@OscarsFace@cloud"
+  path "/"
+    br "/main"
+    co "/main"
