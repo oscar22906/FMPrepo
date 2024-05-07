@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b62838d5807b4c14ebd6cccf74044b73, type: 3}
+  m_Name: Fox1 Animations
+  m_EditorClassIdentifier: 
+  BaseIdleAnims: []
+  CombatIdleAnims: []
+  WalkFwdAnim: {fileID: 0}
+  MirrorWalkFwdAnim: 0
+  WalkRAnim: {fileID: 0}
+  MirrorWalkRAnim: 0
+  WalkLAnim: {fileID: 0}
+  MirrorWalkLAnim: 0
+  WalkBwdAnim: {fileID: 0}
+  MirrorWalkBwdAnim: 0
+  RunFwdAnim: {fileID: 0}
+  MirrorRunFwdAnim: 0
+  RunRAnim: {fileID: 0}
+  MirrorRunRAnim: 0
+  RunLAnim: {fileID: 0}
+  MirrorRunLAnim: 0
+  CWalkFwdAnim: {fileID: 0}
+  CMirrorWalkFwdAnim: 0
+  CWalkRAnim: {fileID: 0}
+  CMirrorWalkRAnim: 0
+  CWalkLAnim: {fileID: 0}
+  CMirrorWalkLAnim: 0
+  CWalkBwdAnim: {fileID: 0}
+  CMirrorWalkBwdAnim: 0
+  CRunFwdAnim: {fileID: 0}
+  CMirrorRunFwdAnim: 0
+  CRunRAnim: {fileID: 0}
+  CMirrorRunRAnim: 0
+  CRunLAnim: {fileID: 0}
+  CMirrorRunLAnim: 0
+  AttackAnims: []
+  HitAnims: []
+  EquipAnim: {fileID: 0}
+  UnEquipAnim: {fileID: 0}
+  BlockAnims: []
+  ReloadAnim: {fileID: 0}
+  DeathAnims: []

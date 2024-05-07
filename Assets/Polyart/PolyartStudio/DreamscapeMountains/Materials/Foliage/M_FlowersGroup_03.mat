@@ -9,14 +9,17 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: M_FlowersGroup_03
   m_Shader: {fileID: 4800000, guid: e540277d695470b4d85f72a22b7c1020, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -48,7 +51,7 @@ Material:
     m_Floats:
     - _AlphaCutoff: 0.35
     - _DitherBottomLevel: 0
-    - _DitherFade: 6.1
+    - _DitherFade: 0
     - _DitherMultiplier1: 0.132
     - _DitheringON: 0
     - _EnvironmentReflections: 1

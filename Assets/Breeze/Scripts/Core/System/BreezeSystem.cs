@@ -68,6 +68,7 @@ namespace Breeze.Core
         public BreezeSounds BreezeSounds;
 
         //Stats Variables
+        public bool Kill = false;
         [Range(1, 999)] public int StartingHealth = 100;
         [Range(1, 999)] public int MaximumHealth = 100;
         public bool RegenerateHealth;
@@ -178,6 +179,7 @@ namespace Breeze.Core
         public float CurrentHealthDebug;
         public bool RegeneratingHealthDebug;
         public string CurrentAIState = "Idle";
+
         public bool IsAlertedDebug;
         public bool IsAttackingDebug;
         public bool IsTargetVisible;
@@ -3382,6 +3384,11 @@ namespace Breeze.Core
         //Updates AI State
         private void UpdateStateDebug()
         {
+            if (Kill)
+            {
+                CurrentAIState = "Dead";
+                Kill= false;
+            }
             if (CurrentHealth <= 0)
             {
                 CurrentAIState = "Dead";

@@ -9,14 +9,19 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Fern
   m_Shader: {fileID: 4800000, guid: 70ff6e3a81c1f424c9f9da756571a30f, type: 3}
-  m_ValidKeywords: []
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _USEGLOBALWINDSETTINGS_ON
+  - _USEVERTEXCOLOR_ON
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -80,8 +85,8 @@ Material:
     - _SpecularIntensity: 0
     - _UseDithering: 0
     - _UseGlobalSetting: 0
-    - _UseGlobalWindSettings: 0
-    - _UseVertexColor: 0
+    - _UseGlobalWindSettings: 1
+    - _UseVertexColor: 1
     - _VariationMapScale: 100
     - _VertexColorGradient: 1
     - _VertexColorOffset: 0
