@@ -17,7 +17,7 @@ namespace Breeze.Core
         {
             if(System == null || !CanReceiveDamage)
                 return;
-            
+            print("AHHHH");
             System.TakeDamage(Amount * DamageMultiplier, Sender, IsPlayer, HitReaction);
         }
     }

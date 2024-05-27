@@ -10,6 +10,11 @@ TagManager:
   - Footsteps/Wood
   - CinemachineTarget
   - AI
+  - ActiveCamera
+  - DropPosition
+  - Hand
+  - Tree
+  - WoodAudio
   layers:
   - Default
   - TransparentFX
@@ -21,9 +26,9 @@ TagManager:
   - Interactable
   - Objects
   - Terrain
-  - 
-  - 
-  - 
+  - Arms
+  - PlayerBits
+  - Equipment
   - 
   - 
   - 

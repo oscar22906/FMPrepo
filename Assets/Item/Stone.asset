@@ -15,4 +15,6 @@ MonoBehaviour:
   id: 0
   itemName: Stone
   value: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 034660147f7bea24688afc524c4930dc, type: 3}
+  itemType: 2
+  prefab: {fileID: 4677078022687905304, guid: ac7a876991ff8ed4196b2f777c8c69f4, type: 3}

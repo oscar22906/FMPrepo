@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3971265668091002021}
   - component: {fileID: 4570972769085205089}
-  m_Layer: 0
+  - component: {fileID: 3997515489666819262}
+  m_Layer: 8
   m_Name: Prefab_Conifer_04
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,6 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92214723559444150}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,7 +36,6 @@ Transform:
   - {fileID: 3927625965225326985}
   - {fileID: 3763293585486436044}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!205 &4570972769085205089
 LODGroup:
@@ -67,6 +68,102 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8136756952033629927}
   m_Enabled: 1
+--- !u!82 &3997515489666819262
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92214723559444150}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.486
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1495527397111417927
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,8 +175,7 @@ GameObject:
   - component: {fileID: 3763293585486436044}
   - component: {fileID: 2111254199813008577}
   - component: {fileID: 8136756952033629927}
-  - component: {fileID: 8243401353877854132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_04_LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,13 +189,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495527397111417927}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -0.35, z: -0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3971265668091002021}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2111254199813008577
 MeshFilter:
@@ -152,20 +248,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8243401353877854132
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495527397111417927}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.35
-  m_Height: 18.597761
-  m_Direction: 1
-  m_Center: {x: 0, y: 9.06388, z: -1.2503026e-14}
 --- !u!1 &2622925338864186114
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,9 +260,13 @@ GameObject:
   - component: {fileID: 1700818595910399091}
   - component: {fileID: 3510472232523597786}
   - component: {fileID: 8243401353877854135}
-  m_Layer: 0
+  - component: {fileID: 6356188456066770805}
+  - component: {fileID: 8323045846315255190}
+  - component: {fileID: 8904922191115129925}
+  - component: {fileID: 693560730533831832}
+  m_Layer: 8
   m_Name: SM_Conifer_04_LOD0
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,13 +278,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2622925338864186114}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.35, z: 0}
+  m_LocalPosition: {x: 0, y: -0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3971265668091002021}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1700818595910399091
 MeshFilter:
@@ -259,12 +345,112 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2622925338864186114}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 768
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_Radius: 0.35
-  m_Height: 18.597761
+  serializedVersion: 2
+  m_Radius: 0.51
+  m_Height: 19.765892
   m_Direction: 1
-  m_Center: {x: 0, y: 9.06388, z: -1.2503026e-14}
+  m_Center: {x: -0.009325266, y: 9.687946, z: -0.13166714}
+--- !u!114 &6356188456066770805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622925338864186114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5130f37452cb514988c556bfaffe3c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 5
+  minHealth: 3
+  pushForce: 50
+  decayTime: 7
+  choppedTreePrefab: {fileID: 325695875664101177, guid: 9fde528d5528e97449d75e5b7c8ce9f8,
+    type: 3}
+  offsetHeight: 2
+  hitAudioClips:
+  - {fileID: 8300000, guid: 587909a850440ac42b773384123e3791, type: 3}
+  - {fileID: 8300000, guid: ef1487ab5e11ab04081063799c765bb4, type: 3}
+  - {fileID: 8300000, guid: 40554b5acbeb14a4fa5783b44eb0aa03, type: 3}
+  - {fileID: 8300000, guid: 88494b035428c1847a9374d76c92db49, type: 3}
+  - {fileID: 8300000, guid: 0ecf50d3f87e1334eb02216dda85f4e0, type: 3}
+  - {fileID: 8300000, guid: ff10cc4af411a8741aa33b58877830c2, type: 3}
+  - {fileID: 8300000, guid: 1807e086c1ba17b46b33fb31d521a362, type: 3}
+  - {fileID: 8300000, guid: 453eaecfe9b02294ba44f35bf8ac179e, type: 3}
+  - {fileID: 8300000, guid: 23c65a8bcd641ed4fb12f9e237f98ef8, type: 3}
+  - {fileID: 8300000, guid: 8e272fc30ccd6a240a427e81fe797f44, type: 3}
+  - {fileID: 8300000, guid: fae2848edf50a3c44a0c60c280cf87da, type: 3}
+  - {fileID: 8300000, guid: 67bf0315917b19544a2fb966604f4d81, type: 3}
+  fallAudioClips:
+  - {fileID: 8300000, guid: ce9321b2afce7b44899406ca19144d6a, type: 3}
+--- !u!114 &8323045846315255190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622925338864186114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99634edca86565b4a96a0b7b261787f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simpleTooltipStyle: {fileID: 11400000, guid: a104288cd74ebc84d80f27ae9b51d26c, type: 2}
+  infoLeft: '$Large coniferous tree
+
+    ''Juniper Tree'
+  infoRight: 
+--- !u!114 &8904922191115129925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622925338864186114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a279d146c0f2b664684cc6dc955048f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &693560730533831832
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2622925338864186114}
+  serializedVersion: 4
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 32
+  m_CollisionDetection: 0
 --- !u!1 &6338905054429815990
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,8 +462,7 @@ GameObject:
   - component: {fileID: 3927625965225326985}
   - component: {fileID: 288973981289252619}
   - component: {fileID: 3713396212957125086}
-  - component: {fileID: 8243401353877854133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_04_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,13 +476,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6338905054429815990}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.35, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3971265668091002021}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &288973981289252619
 MeshFilter:
@@ -350,20 +535,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8243401353877854133
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6338905054429815990}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.35
-  m_Height: 18.597761
-  m_Direction: 1
-  m_Center: {x: 0, y: 9.06388, z: -1.2503026e-14}
 --- !u!1 &6474057439690137350
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,8 +546,7 @@ GameObject:
   - component: {fileID: 5037088851519428068}
   - component: {fileID: 8623865951894026250}
   - component: {fileID: 1266208114035147482}
-  - component: {fileID: 8243401353877854134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_04_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,13 +560,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6474057439690137350}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.35, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3971265668091002021}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8623865951894026250
 MeshFilter:
@@ -449,17 +619,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8243401353877854134
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6474057439690137350}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.35
-  m_Height: 18.597761
-  m_Direction: 1
-  m_Center: {x: 0, y: 9.06388, z: -1.2503026e-14}

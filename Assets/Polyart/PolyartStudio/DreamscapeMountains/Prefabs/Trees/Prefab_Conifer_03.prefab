@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6354681061619915973}
   - component: {fileID: 2336866619429054178}
   - component: {fileID: 3375105522506964478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_03_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607577694838179730}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.54, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8489799570482178809}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2336866619429054178
 MeshFilter:
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6257082672938052390}
   - component: {fileID: 8173900035836891795}
   - component: {fileID: 1916085262473892415}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_03_LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,13 +109,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825396115316055521}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -0.54, z: -0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8489799570482178809}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8173900035836891795
 MeshFilter:
@@ -179,9 +179,14 @@ GameObject:
   - component: {fileID: 6348697696664975829}
   - component: {fileID: 4726886807045693431}
   - component: {fileID: 4935871839495074901}
-  m_Layer: 0
+  - component: {fileID: 895557672721851849}
+  - component: {fileID: 5236091221298074278}
+  - component: {fileID: 6621578532644919667}
+  - component: {fileID: 6358695109084274752}
+  - component: {fileID: 8427426234637670638}
+  m_Layer: 8
   m_Name: SM_Conifer_03_LOD0
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,13 +198,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4116316737967844074}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.54, z: 0}
+  m_LocalPosition: {x: 0, y: -0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8489799570482178809}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4726886807045693431
 MeshFilter:
@@ -252,6 +257,120 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &895557672721851849
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4116316737967844074}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 768
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.6
+  m_Height: 20.356045
+  m_Direction: 1
+  m_Center: {x: -0.009325266, y: 9.983023, z: -0.13166714}
+--- !u!114 &5236091221298074278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4116316737967844074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5130f37452cb514988c556bfaffe3c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 5
+  minHealth: 3
+  pushForce: 50
+  decayTime: 7
+  choppedTreePrefab: {fileID: 325695875664101177, guid: 9fde528d5528e97449d75e5b7c8ce9f8,
+    type: 3}
+  offsetHeight: 2
+  hitAudioClips:
+  - {fileID: 8300000, guid: 587909a850440ac42b773384123e3791, type: 3}
+  - {fileID: 8300000, guid: ef1487ab5e11ab04081063799c765bb4, type: 3}
+  - {fileID: 8300000, guid: 40554b5acbeb14a4fa5783b44eb0aa03, type: 3}
+  - {fileID: 8300000, guid: 88494b035428c1847a9374d76c92db49, type: 3}
+  - {fileID: 8300000, guid: 0ecf50d3f87e1334eb02216dda85f4e0, type: 3}
+  - {fileID: 8300000, guid: ff10cc4af411a8741aa33b58877830c2, type: 3}
+  - {fileID: 8300000, guid: 1807e086c1ba17b46b33fb31d521a362, type: 3}
+  - {fileID: 8300000, guid: 453eaecfe9b02294ba44f35bf8ac179e, type: 3}
+  - {fileID: 8300000, guid: 23c65a8bcd641ed4fb12f9e237f98ef8, type: 3}
+  - {fileID: 8300000, guid: 8e272fc30ccd6a240a427e81fe797f44, type: 3}
+  - {fileID: 8300000, guid: fae2848edf50a3c44a0c60c280cf87da, type: 3}
+  - {fileID: 8300000, guid: 67bf0315917b19544a2fb966604f4d81, type: 3}
+  fallAudioClips:
+  - {fileID: 8300000, guid: ce9321b2afce7b44899406ca19144d6a, type: 3}
+--- !u!114 &6621578532644919667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4116316737967844074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99634edca86565b4a96a0b7b261787f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simpleTooltipStyle: {fileID: 11400000, guid: a104288cd74ebc84d80f27ae9b51d26c, type: 2}
+  infoLeft: '$Large coniferous tree
+
+    ''Norway Spruce'
+  infoRight: 
+--- !u!114 &6358695109084274752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4116316737967844074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a279d146c0f2b664684cc6dc955048f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &8427426234637670638
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4116316737967844074}
+  serializedVersion: 4
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 32
+  m_CollisionDetection: 0
 --- !u!1 &4866854503309924586
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,9 +381,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8489799570482178809}
   - component: {fileID: 9052883052624133181}
-  m_Layer: 0
+  - component: {fileID: 5570444872495724568}
+  m_Layer: 8
   m_Name: Prefab_Conifer_03
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,6 +396,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4866854503309924586}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -286,7 +407,6 @@ Transform:
   - {fileID: 6459757253115604464}
   - {fileID: 6257082672938052390}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!205 &9052883052624133181
 LODGroup:
@@ -319,6 +439,102 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1916085262473892415}
   m_Enabled: 1
+--- !u!82 &5570444872495724568
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866854503309924586}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.52
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5186239076414841597
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +546,7 @@ GameObject:
   - component: {fileID: 6459757253115604464}
   - component: {fileID: 1976899635807540111}
   - component: {fileID: 3985833271726422330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_03_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,13 +560,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5186239076414841597}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.00000006717942, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.54, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8489799570482178809}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1976899635807540111
 MeshFilter:

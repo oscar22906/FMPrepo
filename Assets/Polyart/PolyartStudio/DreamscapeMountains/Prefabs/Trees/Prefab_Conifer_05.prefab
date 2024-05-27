@@ -12,9 +12,13 @@ GameObject:
   - component: {fileID: 7213969729192604356}
   - component: {fileID: 6831409532131742817}
   - component: {fileID: 2374516198040991693}
-  m_Layer: 0
+  - component: {fileID: 3716014915662599523}
+  - component: {fileID: 3204588656448632562}
+  - component: {fileID: 4183816733085469001}
+  - component: {fileID: 1086856759606662912}
+  m_Layer: 8
   m_Name: SM_Conifer_05_LOD0
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,13 +30,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697266475184630142}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.58000004, z: 0}
+  m_LocalPosition: {x: 0, y: -0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7316463904911875289}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7213969729192604356
 MeshFilter:
@@ -93,12 +97,112 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697266475184630142}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 768
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_Radius: 0.44
-  m_Height: 10.373938
+  serializedVersion: 2
+  m_Radius: 0.51
+  m_Height: 11.518546
   m_Direction: 1
-  m_Center: {x: 0, y: 4.951968, z: 3.9716155e-15}
+  m_Center: {x: -0.009325266, y: 5.5642734, z: -0.13166714}
+--- !u!114 &3716014915662599523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697266475184630142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5130f37452cb514988c556bfaffe3c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 5
+  minHealth: 3
+  pushForce: 50
+  decayTime: 7
+  choppedTreePrefab: {fileID: 325695875664101177, guid: 9fde528d5528e97449d75e5b7c8ce9f8,
+    type: 3}
+  offsetHeight: 2
+  hitAudioClips:
+  - {fileID: 8300000, guid: 587909a850440ac42b773384123e3791, type: 3}
+  - {fileID: 8300000, guid: ef1487ab5e11ab04081063799c765bb4, type: 3}
+  - {fileID: 8300000, guid: 40554b5acbeb14a4fa5783b44eb0aa03, type: 3}
+  - {fileID: 8300000, guid: 88494b035428c1847a9374d76c92db49, type: 3}
+  - {fileID: 8300000, guid: 0ecf50d3f87e1334eb02216dda85f4e0, type: 3}
+  - {fileID: 8300000, guid: ff10cc4af411a8741aa33b58877830c2, type: 3}
+  - {fileID: 8300000, guid: 1807e086c1ba17b46b33fb31d521a362, type: 3}
+  - {fileID: 8300000, guid: 453eaecfe9b02294ba44f35bf8ac179e, type: 3}
+  - {fileID: 8300000, guid: 23c65a8bcd641ed4fb12f9e237f98ef8, type: 3}
+  - {fileID: 8300000, guid: 8e272fc30ccd6a240a427e81fe797f44, type: 3}
+  - {fileID: 8300000, guid: fae2848edf50a3c44a0c60c280cf87da, type: 3}
+  - {fileID: 8300000, guid: 67bf0315917b19544a2fb966604f4d81, type: 3}
+  fallAudioClips:
+  - {fileID: 8300000, guid: ce9321b2afce7b44899406ca19144d6a, type: 3}
+--- !u!114 &3204588656448632562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697266475184630142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99634edca86565b4a96a0b7b261787f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simpleTooltipStyle: {fileID: 11400000, guid: a104288cd74ebc84d80f27ae9b51d26c, type: 2}
+  infoLeft: '$Large coniferous tree
+
+    ''Hemlock'
+  infoRight: 
+--- !u!114 &4183816733085469001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697266475184630142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a279d146c0f2b664684cc6dc955048f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1086856759606662912
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697266475184630142}
+  serializedVersion: 4
+  m_Mass: 3
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 32
+  m_CollisionDetection: 0
 --- !u!1 &939612597667101496
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,8 +214,7 @@ GameObject:
   - component: {fileID: 148721256041133209}
   - component: {fileID: 1788641450002422773}
   - component: {fileID: 1231230014861217515}
-  - component: {fileID: 6087494453032027706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_05_LOD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,13 +228,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939612597667101496}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -0.54, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7316463904911875289}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1788641450002422773
 MeshFilter:
@@ -184,20 +287,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &6087494453032027706
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939612597667101496}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.44
-  m_Height: 10.373938
-  m_Direction: 1
-  m_Center: {x: 0, y: 4.951968, z: 3.9716155e-15}
 --- !u!1 &6039913074229227210
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,9 +297,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7316463904911875289}
   - component: {fileID: 7924879308050876957}
-  m_Layer: 0
+  - component: {fileID: 4777084781099837690}
+  m_Layer: 8
   m_Name: Prefab_Conifer_05
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,6 +312,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6039913074229227210}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -233,7 +324,6 @@ Transform:
   - {fileID: 148721256041133209}
   - {fileID: 6714347989102967867}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!205 &7924879308050876957
 LODGroup:
@@ -270,6 +360,102 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7708265489355672863}
   m_Enabled: 1
+--- !u!82 &4777084781099837690
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6039913074229227210}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.52
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6512770007218234484
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,8 +467,7 @@ GameObject:
   - component: {fileID: 6760620751837742519}
   - component: {fileID: 6278178556223660417}
   - component: {fileID: 5085663625075563659}
-  - component: {fileID: 2374516198040991695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_05_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,13 +481,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6512770007218234484}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7316463904911875289}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6278178556223660417
 MeshFilter:
@@ -355,20 +540,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2374516198040991695
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6512770007218234484}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.44
-  m_Height: 10.373938
-  m_Direction: 1
-  m_Center: {x: 0, y: 4.951968, z: 3.9716155e-15}
 --- !u!1 &6970628137048961838
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,8 +551,7 @@ GameObject:
   - component: {fileID: 6101907987917841835}
   - component: {fileID: 2760084644546407906}
   - component: {fileID: 8830239870347293788}
-  - component: {fileID: 2374516198040991694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_05_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,13 +565,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6970628137048961838}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.58000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7316463904911875289}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2760084644546407906
 MeshFilter:
@@ -454,20 +624,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2374516198040991694
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6970628137048961838}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.44
-  m_Height: 10.373938
-  m_Direction: 1
-  m_Center: {x: 0, y: 4.951968, z: 3.9716155e-15}
 --- !u!1 &7872141012396785005
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,8 +635,7 @@ GameObject:
   - component: {fileID: 6714347989102967867}
   - component: {fileID: 1354054126333594860}
   - component: {fileID: 7708265489355672863}
-  - component: {fileID: 1294287937096376763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Conifer_05_LOD4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,13 +649,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7872141012396785005}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -0.54, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7316463904911875289}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1354054126333594860
 MeshFilter:
@@ -553,17 +708,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1294287937096376763
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7872141012396785005}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.44
-  m_Height: 10.373938
-  m_Direction: 1
-  m_Center: {x: 0, y: 4.951968, z: 3.9716155e-15}

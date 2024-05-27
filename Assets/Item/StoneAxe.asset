@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: StoneAxe
   m_EditorClassIdentifier: 
   id: 1
-  itemName: StoneAxe
+  itemName: Stone Axe
   value: 1
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 18ef2793bf40fcf4b82bd50fe80b6935, type: 3}
+  itemType: 1
+  prefab: {fileID: 7594434761937562942, guid: fa9fac0829610c547a106bad6950e350, type: 3}

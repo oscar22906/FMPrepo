@@ -31,8 +31,14 @@ namespace Breeze.Core
         //Settings
         public float CurrentHealth = 100f;
         public Transform HitPosition;
+        public HealthSlider healthSlider;
 
         [HideInInspector] public UnityEvent<GameObject> gotAttackedEvent = new UnityEvent<GameObject>();
+
+        private void Awake()
+        {
+            healthSlider.SetMaxHealth(CurrentHealth);
+        }
 
         private void OnValidate()
         {
@@ -72,6 +78,7 @@ namespace Breeze.Core
 
         public void TakeDamage(float damage, GameObject sender)
         {
+            healthSlider.TakeDamage(damage);
             gotAttackedEvent.Invoke(sender);
             GameManager.gameManager.playerHealth.DamageUnit(damage);
             Debug.Log("Player Damage Taken: " + damage + ". Player Health = " + GameManager.gameManager.playerHealth.Health);

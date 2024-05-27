@@ -961,7 +961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2701855748669711028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7885675, y: -0.011073572, z: 0.014127324, w: 0.61468613}
+  m_LocalRotation: {x: 0.78856754, y: -0.011073573, z: 0.014127325, w: 0.6146862}
   m_LocalPosition: {x: 4.6566128e-12, y: 0.0011310256, z: 3.0733643e-10}
   m_LocalScale: {x: 1.0010931, y: 0.957201, z: 1.0438006}
   m_ConstrainProportionsScale: 0
@@ -1024,7 +1024,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3092595018852261449}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18914552, y: 0.0015287822, z: 0.012587659, w: 0.9818672}
+  m_LocalRotation: {x: 0.18914554, y: 0.0015287822, z: 0.01258766, w: 0.9818672}
   m_LocalPosition: {x: -1.3969838e-11, y: 0.0019284356, z: 3.0326192e-10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1116,7 +1116,7 @@ Animator:
   m_GameObject: {fileID: 3385580763209172593}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7, type: 3}
-  m_Controller: {fileID: 9100000, guid: 283de6ecaf825b74985582064fc26c43, type: 2}
+  m_Controller: {fileID: 9100000, guid: b85a0afb1886d2249bc60965e4ee9ac1, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1185,8 +1185,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BreezeSounds: {fileID: 3604947020785498103}
-  StartingHealth: 100
-  MaximumHealth: 100
+  Kill: 0
+  StartingHealth: 25
+  MaximumHealth: 25
   RegenerateHealth: 0
   RegenerateCondition: 0
   RegenerateFrequency: 1
@@ -1207,7 +1208,7 @@ MonoBehaviour:
   FleeDistance: 100
   MinIdleLength: 3
   MaxIdleLength: 5
-  RotationSpeed: 5
+  RotationSpeed: 10
   UseRootMotion: 0
   WalkSpeed: 1.5
   RunSpeed: 10
@@ -1235,7 +1236,7 @@ MonoBehaviour:
   DetectionType: 1
   DetectionLock: 0
   DetectionFrequency: 0.25
-  DetectionDistance: 27
+  DetectionDistance: 11
   DetectionAngle: 270
   DetectionLayers:
     serializedVersion: 2
@@ -1264,7 +1265,7 @@ MonoBehaviour:
   CFollowingDistance: 4.5
   CSprintFollowDistance: 12
   CTooCloseDistance: 1.5
-  CurrentHealthDebug: 100
+  CurrentHealthDebug: 25
   RegeneratingHealthDebug: 0
   CurrentAIState: Idle
   IsAlertedDebug: 0
@@ -1353,13 +1354,13 @@ MonoBehaviour:
   WalkBwdAnim: {fileID: -2138633695887115046, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7,
     type: 3}
   MirrorWalkBwdAnim: 0
-  RunFwdAnim: {fileID: -7949759081495584325, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7,
+  RunFwdAnim: {fileID: -788650454100111917, guid: b5c233247ec9db54baf4f66b9cd95f4e,
     type: 3}
   MirrorRunFwdAnim: 0
-  RunRAnim: {fileID: -7949759081495584325, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7,
+  RunRAnim: {fileID: -788650454100111917, guid: b5c233247ec9db54baf4f66b9cd95f4e,
     type: 3}
   MirrorRunRAnim: 0
-  RunLAnim: {fileID: -7949759081495584325, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7,
+  RunLAnim: {fileID: -788650454100111917, guid: b5c233247ec9db54baf4f66b9cd95f4e,
     type: 3}
   MirrorRunLAnim: 0
   CWalkFwdAnim: {fileID: -7949759081495584325, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7,
@@ -1374,13 +1375,13 @@ MonoBehaviour:
   CWalkBwdAnim: {fileID: -2138633695887115046, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7,
     type: 3}
   CMirrorWalkBwdAnim: 0
-  CRunFwdAnim: {fileID: -7949759081495584325, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7,
+  CRunFwdAnim: {fileID: -788650454100111917, guid: b5c233247ec9db54baf4f66b9cd95f4e,
     type: 3}
   CMirrorRunFwdAnim: 0
-  CRunRAnim: {fileID: -7949759081495584325, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7,
+  CRunRAnim: {fileID: -788650454100111917, guid: b5c233247ec9db54baf4f66b9cd95f4e,
     type: 3}
   CMirrorRunRAnim: 0
-  CRunLAnim: {fileID: -7949759081495584325, guid: eb96dc72bdc62eb4fa5ddd02690cb8d7,
+  CRunLAnim: {fileID: -788650454100111917, guid: b5c233247ec9db54baf4f66b9cd95f4e,
     type: 3}
   CMirrorRunLAnim: 0
   AttackAnims: []

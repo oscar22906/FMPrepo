@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class ItemController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Item Item;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
